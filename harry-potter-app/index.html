@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Harry Potter App</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logoContainer">
+        <img src="./pictures/Harry_Potter.png" alt="logo" class="logo" />
+      </div>
+    </nav>
+
+    <div class="dropdownContainer">
+      <label for="classes">Classes</label>
+      <select id="classes" class="dropdown"></select>
+    </div>
+
+    <hr />
+    <h1 class="tableTitle"></h1>
+    <h3 class="teacher"></h3>
+
+    <table>
+      <thead>
+        <tr class="sortBtns">
+          <th>Name <button class="nameSort">Sort</button></th>
+          <th>House <button class="houseSort">Sort</button></th>
+          <th>Grade <button class="gradeSort">Sort</button></th>
+        </tr>
+      </thead>
+      <tbody class="classData"></tbody>
+    </table>
+
+    <button class="fetchBtn">fetch</button>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
